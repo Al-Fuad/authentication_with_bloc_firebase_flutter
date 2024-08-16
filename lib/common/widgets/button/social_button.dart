@@ -6,17 +6,19 @@ class SocialButton extends StatelessWidget {
   final String iconPath;
   final String label;
   final double horizontalPadding;
+  final VoidCallback onPressed;
   const SocialButton({
     super.key,
     required this.iconPath,
     required this.label,
     this.horizontalPadding = 100,
+    required this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextButton.icon(
-      onPressed: () {},
+      onPressed: onPressed,
       icon: SvgPicture.asset(
         iconPath,
         width: 25,
@@ -30,7 +32,8 @@ class SocialButton extends StatelessWidget {
         ),
       ),
       style: TextButton.styleFrom(
-        padding: EdgeInsets.symmetric(vertical: 30, horizontal: horizontalPadding),
+        padding:
+            EdgeInsets.symmetric(vertical: 30, horizontal: horizontalPadding),
         shape: RoundedRectangleBorder(
           side: const BorderSide(
             color: AppColor.borderColor,
