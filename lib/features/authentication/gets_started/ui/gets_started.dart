@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../common/widgets/button/gradient_button.dart';
+import '../../login/ui/login.dart';
+import '../../signup/ui/signup.dart';
 import '../bloc/gets_started_bloc.dart';
 
 class GetsStarted extends StatelessWidget {
@@ -12,10 +14,10 @@ class GetsStarted extends StatelessWidget {
     return BlocListener<GetsStartedBloc, GetsStartedState>(
       listener: (context, state) {
         if (state is GetsStartedSignupButtonPressedState) {
-          // Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUp()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const Signup()));
         }
         if (state is GetsStartedLoginButtonPressedState) {
-          // Navigator.push(context, MaterialPageRoute(builder: (context) => const Login()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const Login()));
         }
       },
       child: Scaffold(
