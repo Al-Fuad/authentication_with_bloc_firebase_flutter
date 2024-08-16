@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "709337548585",
+    "project_id": "authentication-with-bff",
+    "storage_bucket": "authentication-with-bff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709337548585:android:13a5e903083709077bd938",
+        "android_client_info": {
+          "package_name": "com.example.authentication_with_bloc_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDekD2LgBVytQVmFYB8TaBXnzrYhxaHexQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709337548585:android:1907ea07c3bef4297bd938",
+        "android_client_info": {
+          "package_name": "com.example.authentication_with_bloc_firebase_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDekD2LgBVytQVmFYB8TaBXnzrYhxaHexQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

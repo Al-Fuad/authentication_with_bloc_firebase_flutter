@@ -101,8 +101,8 @@ class Signup extends StatelessWidget {
                             SignupButtonPressed(
                               firstName: firstNameController.text,
                               lastName: lastNameController.text,
-                              email: emailController.text,
-                              password: passwordController.text,
+                              email: emailController.text.toString(),
+                              password: passwordController.text.toString(),
                               confirmPassword: confirmPasswordController.text,
                             ),
                           );
