@@ -31,6 +31,7 @@ class GetsStarted extends StatelessWidget {
                   child: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      SizedBox(height: 80,),
                       Text(
                         "Gets Started",
                         style: TextStyle(fontSize: 30),
@@ -46,7 +47,7 @@ class GetsStarted extends StatelessWidget {
                   )),
               SizedBox(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.55,
+                height: MediaQuery.of(context).size.height * 0.8,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -59,9 +60,9 @@ class GetsStarted extends StatelessWidget {
                       },
                       text: "Sign Up",
                     ),
-                    // const SizedBox(
-                    //   height: 10,
-                    // ),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     GradientButton(
                       onPressed: () {
                         context
