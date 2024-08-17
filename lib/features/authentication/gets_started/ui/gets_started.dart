@@ -13,10 +13,10 @@ class GetsStarted extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<GetsStartedBloc, GetsStartedState>(
       listener: (context, state) {
-        if (state is GetsStartedSignupButtonPressedState) {
+        if (state is GetsStartedSignupInProgress) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => const Signup()));
         }
-        if (state is GetsStartedLoginButtonPressedState) {
+        if (state is GetsStartedLoginInProgress) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => const Login()));
         }
       },

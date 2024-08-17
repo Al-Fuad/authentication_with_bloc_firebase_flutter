@@ -7,10 +7,10 @@ part 'gets_started_state.dart';
 class GetsStartedBloc extends Bloc<GetsStartedEvent, GetsStartedState> {
   GetsStartedBloc() : super(GetsStartedInitial()) {
     on<GetsStartedSignupButtonPressed>((event, emit) {
-      emit(GetsStartedSignupButtonPressedState());
+      emit(GetsStartedSignupInProgress());
     });
     on<GetsStartedLoginButtonPressed>((event, emit) {
-      emit(GetsStartedLoginButtonPressedState());
+      emit(GetsStartedLoginInProgress());
     });
   }
 }
