@@ -1,5 +1,6 @@
 import 'package:authentication_with_bloc_firebase_flutter/common/widgets/input/default_text_field.dart';
 import 'package:authentication_with_bloc_firebase_flutter/features/home/ui/home.dart';
+import 'package:authentication_with_bloc_firebase_flutter/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -20,15 +21,10 @@ class Signup extends StatelessWidget {
     return BlocConsumer<SignupBloc, SignupState>(
       listener: (context, state) {
         if(state is SignupSuccess){
-          Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()));
+          HelperFunction.navigateTo(context, const Home());
         }
         if(state is SignupFailure){
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.error),
-              backgroundColor: Colors.red,
-            ),
-          );
+          HelperFunction.showSnackBar(context, state.error);
         }
       },
       builder: (context, state) {
@@ -50,12 +46,16 @@ class Signup extends StatelessWidget {
                   ),
                   const SizedBox(height: 50),
                   SocialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.read<SignupBloc>().add(SignupWithGooglePressed());
+                      },
                       iconPath: 'assets/svgs/g_logo.svg',
                       label: 'Continue with Google'),
                   const SizedBox(height: 20),
                   SocialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.read<SignupBloc>().add(SignupWithFacebookPressed());
+                    },
                     iconPath: 'assets/svgs/f_logo.svg',
                     label: 'Continue with Facebook',
                     horizontalPadding: 90,
