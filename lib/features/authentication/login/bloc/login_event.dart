@@ -12,3 +12,6 @@ final class LoginButtonPressed extends LoginEvent {
     required this.password,
   });
 }
+
+final class LoginWithGooglePressed extends LoginEvent {}
+final class LoginWithFacebookPressed extends LoginEvent {}
