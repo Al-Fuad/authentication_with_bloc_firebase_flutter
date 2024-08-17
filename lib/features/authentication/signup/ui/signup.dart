@@ -13,8 +13,6 @@ class Signup extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final firstNameController = TextEditingController();
-    final lastNameController = TextEditingController();
     final emailController = TextEditingController();
     final passwordController = TextEditingController();
     final confirmPasswordController = TextEditingController();
@@ -69,16 +67,6 @@ class Signup extends StatelessWidget {
                   ),
                   const SizedBox(height: 15),
                   DefaultTextField(
-                    hintText: 'First Name',
-                    controller: firstNameController,
-                  ),
-                  const SizedBox(height: 15),
-                  DefaultTextField(
-                    hintText: 'Last Name',
-                    controller: lastNameController,
-                  ),
-                  const SizedBox(height: 15),
-                  DefaultTextField(
                     hintText: 'Email',
                     controller: emailController,
                   ),
@@ -99,8 +87,6 @@ class Signup extends StatelessWidget {
                     onPressed: () {
                       context.read<SignupBloc>().add(
                             SignupButtonPressed(
-                              firstName: firstNameController.text,
-                              lastName: lastNameController.text,
                               email: emailController.text.toString(),
                               password: passwordController.text.toString(),
                               confirmPassword: confirmPasswordController.text,
