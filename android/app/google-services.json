@@ -12,7 +12,12 @@
           "package_name": "com.example.authentication_with_bloc_"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "709337548585-n4k5ki7m1uc8k4k44apatnrp0grmapks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDekD2LgBVytQVmFYB8TaBXnzrYhxaHexQ"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709337548585-n4k5ki7m1uc8k4k44apatnrp0grmapks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "709337548585-kglsu2mk86vdnapk9uedqpsql2mteimn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.authenticationWithBlocFirebaseFlutter"
+              }
+            }
+          ]
         }
       }
     },
@@ -31,7 +48,20 @@
           "package_name": "com.example.authentication_with_bloc_firebase_flutter"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "709337548585-koq17aojb69jctda4b9tcaond7ahcgtt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.authentication_with_bloc_firebase_flutter",
+            "certificate_hash": "b810ee91f0fdaad6ddd35532a48e40360d997539"
+          }
+        },
+        {
+          "client_id": "709337548585-n4k5ki7m1uc8k4k44apatnrp0grmapks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDekD2LgBVytQVmFYB8TaBXnzrYhxaHexQ"
@@ -39,7 +69,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709337548585-n4k5ki7m1uc8k4k44apatnrp0grmapks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "709337548585-kglsu2mk86vdnapk9uedqpsql2mteimn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.authenticationWithBlocFirebaseFlutter"
+              }
+            }
+          ]
         }
       }
     }
