@@ -43,6 +43,42 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:709337548585:android:503ade92be0e74257bd938",
+        "android_client_info": {
+          "package_name": "com.example.authentication_with_bloc_firebase_flutt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709337548585-n4k5ki7m1uc8k4k44apatnrp0grmapks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDekD2LgBVytQVmFYB8TaBXnzrYhxaHexQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709337548585-n4k5ki7m1uc8k4k44apatnrp0grmapks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "709337548585-kglsu2mk86vdnapk9uedqpsql2mteimn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.authenticationWithBlocFirebaseFlutter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:709337548585:android:1907ea07c3bef4297bd938",
         "android_client_info": {
           "package_name": "com.example.authentication_with_bloc_firebase_flutter"

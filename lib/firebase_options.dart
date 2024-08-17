@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDekD2LgBVytQVmFYB8TaBXnzrYhxaHexQ',
-    appId: '1:709337548585:android:13a5e903083709077bd938',
+    appId: '1:709337548585:android:503ade92be0e74257bd938',
     messagingSenderId: '709337548585',
     projectId: 'authentication-with-bff',
     storageBucket: 'authentication-with-bff.appspot.com',
@@ -64,6 +64,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '709337548585',
     projectId: 'authentication-with-bff',
     storageBucket: 'authentication-with-bff.appspot.com',
+    androidClientId: '709337548585-koq17aojb69jctda4b9tcaond7ahcgtt.apps.googleusercontent.com',
+    iosClientId: '709337548585-kglsu2mk86vdnapk9uedqpsql2mteimn.apps.googleusercontent.com',
     iosBundleId: 'com.example.authenticationWithBlocFirebaseFlutter',
   );
 
@@ -73,6 +75,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '709337548585',
     projectId: 'authentication-with-bff',
     storageBucket: 'authentication-with-bff.appspot.com',
+    androidClientId: '709337548585-koq17aojb69jctda4b9tcaond7ahcgtt.apps.googleusercontent.com',
+    iosClientId: '709337548585-kglsu2mk86vdnapk9uedqpsql2mteimn.apps.googleusercontent.com',
     iosBundleId: 'com.example.authenticationWithBlocFirebaseFlutter',
   );
 
@@ -85,4 +89,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'authentication-with-bff.appspot.com',
     measurementId: 'G-V1EWQMQ7Q4',
   );
+
 }
