@@ -20,44 +20,43 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
     emit(SignupLoading());
     try {
       if (event.email.isEmpty) {
-        emit(SignupFailure(error: 'Email is required'));
+        emit(SignupFailure('Email is required'));
         return null;
       }
       if (event.password.isEmpty) {
-        emit(SignupFailure(error: 'Password is required'));
+        emit(SignupFailure('Password is required'));
         return null;
       }
       if (event.confirmPassword.isEmpty) {
-        emit(SignupFailure(error: 'Confirm password is required'));
+        emit(SignupFailure('Confirm password is required'));
         return null;
       }
       if (!event.email.contains('@') ||
           !event.email.contains('.') ||
           event.email.length < 5) {
-        emit(SignupFailure(error: 'Invalid email'));
+        emit(SignupFailure('Invalid email'));
         return null;
       }
       if (event.password.length < 6) {
-        emit(SignupFailure(error: 'Password must be at least 6 characters'));
+        emit(SignupFailure('Password must be at least 6 characters'));
         return null;
       }
       if (!RegExp(r'\d').hasMatch(event.password)) {
-        emit(SignupFailure(error: 'Password must contain at least one number'));
+        emit(SignupFailure('Password must contain at least one number'));
         return null;
       }
       if (!RegExp(r'[A-Z]').hasMatch(event.password)) {
         emit(SignupFailure(
-            error: 'Password must contain at least one uppercase letter'));
+            'Password must contain at least one uppercase letter'));
         return null;
       }
       if (!RegExp(r'[a-z]').hasMatch(event.password)) {
         emit(SignupFailure(
-            error: 'Password must contain at least one lowercase letter'));
+            'Password must contain at least one lowercase letter'));
         return null;
       }
       if (event.password != event.confirmPassword) {
-        emit(SignupFailure(
-            error: 'Password and confirm password must be the same'));
+        emit(SignupFailure('Password and confirm password must be the same'));
         return null;
       }
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
@@ -66,9 +65,9 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
       );
       emit(SignupSuccess());
     } on FirebaseAuthException catch (e) {
-      emit(SignupFailure(error: e.runtimeType.toString()));
+      emit(SignupFailure(e.message.toString()));
     } catch (e) {
-      emit(SignupFailure(error: e.toString()));
+      emit(SignupFailure(e.toString()));
     }
   }
 
@@ -79,12 +78,12 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
       await HelperFunction().signInWithGoogle();
       emit(SignupSuccess());
       if (FirebaseAuth.instance.currentUser == null) {
-        emit(SignupFailure(error: 'Google signup failed'));
+        emit(SignupFailure('Google signup failed'));
       }
     } on FirebaseAuthException catch (e) {
-      emit(SignupFailure(error: e.runtimeType.toString()));
+      emit(SignupFailure(e.message.toString()));
     } catch (e) {
-      emit(SignupFailure(error: e.toString()));
+      emit(SignupFailure(e.toString()));
     }
   }
 
@@ -95,12 +94,12 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
       await HelperFunction().signInWithFacebook();
       emit(SignupSuccess());
       if (FirebaseAuth.instance.currentUser == null) {
-        emit(SignupFailure(error: 'Facebook signup failed'));
+        emit(SignupFailure('Facebook signup failed'));
       }
     } on FirebaseAuthException catch (e) {
-      emit(SignupFailure(error: e.runtimeType.toString()));
+      emit(SignupFailure(e.message.toString()));
     } catch (e) {
-      emit(SignupFailure(error: e.toString()));
+      emit(SignupFailure(e.toString()));
     }
   }
 }

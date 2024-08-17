@@ -12,7 +12,7 @@ final class SignupSuccess extends SignupState {}
 final class SignupFailure extends SignupState {
   final String error;
 
-  SignupFailure({
-    required this.error,
-  });
+  SignupFailure(
+    this.error,
+  );
 }
