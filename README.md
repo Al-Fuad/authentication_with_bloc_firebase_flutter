@@ -2,7 +2,7 @@
 
 Basic Authentication Flutter app with BLoC statemanagement using Firebase.
 
-<div style="display: flex; justify-content: space-around; align-items: center;">
+<div style="display: flex; justify-content: space-evenly;">
     <img src="screenshots/getsStarted.jpeg" alt="Gets Started" width="200"/>
     <img src="screenshots/signup.jpeg" alt="Signup" width="200"/>
     <img src="screenshots/login.jpeg" alt="Login" width="200"/>
