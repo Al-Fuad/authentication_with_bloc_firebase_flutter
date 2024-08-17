@@ -19,6 +19,14 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       LoginButtonPressed event, Emitter<LoginState> emit) async {
     emit(LoginLoading());
     try {
+      if(event.email.isEmpty){
+        emit(LoginFailure('Email is empty'));
+        return null;
+      }
+      if(event.password.isEmpty){
+        emit(LoginFailure('Password is empty'));
+        return null;
+      }
       await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: event.email,
         password: event.password,
