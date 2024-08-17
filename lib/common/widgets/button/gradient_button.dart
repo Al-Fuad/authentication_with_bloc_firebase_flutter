@@ -33,9 +33,10 @@ class GradientButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: const TextStyle(
+          style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 17,
+            color: AppColor.white.withOpacity(0.8),
           ),
         ),
       ),
