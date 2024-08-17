@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDekD2LgBVytQVmFYB8TaBXnzrYhxaHexQ',
-    appId: '1:709337548585:android:503ade92be0e74257bd938',
+    appId: '1:709337548585:android:1907ea07c3bef4297bd938',
     messagingSenderId: '709337548585',
     projectId: 'authentication-with-bff',
     storageBucket: 'authentication-with-bff.appspot.com',
