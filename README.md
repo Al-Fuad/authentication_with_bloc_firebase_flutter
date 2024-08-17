@@ -2,9 +2,9 @@
 
 Basic Authentication Flutter app with BLoC statemanagement using Firebase.
 
-![Gets Started](screenshots/getsStarted.jpeg){width=50%}
-![Signup](screenshots/signup.jpeg){width=50%}
-![Login](screenshots/login.jpeg){width=50%}
-![Continue with Google](screenshots/continueWithGoogle.jpg){width=50%}
-![Continue with Facebook](screenshots/continueWithFacebook.jpeg){width=50%}
-![Home with Signout](screenshots/homeWithSignOut.jpg){width=50%}
+<img src="screenshots/getsStarted.jpeg" alt="Gets Started" width="200"/>
+<img src="screenshots/signup.jpeg" alt="Signup" width="200"/>
+<img src="screenshots/login.jpeg" alt="Login" width="200"/>
+<img src="screenshots/continueWithGoogle.jpg" alt="Continue with Google" width="200"/>
+<img src="screenshots/continueWithFacebook.jpeg" alt="Continue with Facebook" width="200"/>
+<img src="screenshots/homeWithSignOut.jpg" alt="Home with Signout button" width="200"/>
